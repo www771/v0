@@ -1,0 +1,189 @@
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .changeAction {
+    width: fit-content;
+    background-color: #171b2b;
+    border: 2px solid #282d46;
+    border-radius: 7px;
+    button {
+      width: 80px;
+      height: 32.5px;
+      background-color: transparent;
+      color: #dbe0ff;
+      border: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      border-radius: 7px;
+    }
+  }
+
+  .changeToken {
+    margin-left: 15px;
+    display: flex;
+
+    .token {
+      cursor: pointer;
+      background-color: #171b2b;
+      border: 2px solid #282d46;
+      padding: 7px 0;
+      width: 100px;
+      padding-left: 10px;
+      color: #dbe0ff;
+      font-weight: bold;
+      border-radius: 7px;
+    }
+
+    option {
+      font-size: 15px;
+    }
+
+    .token:focus {
+      outline: none;
+    }
+
+    form {
+      margin-left: 15px;
+      background-color: #171b2b;
+      border: 2px solid #282d46;
+      border-radius: 7px;
+
+      input {
+        margin-top: 2px;
+        background-color: transparent;
+        border: none;
+        height: 85%;
+        width: 100px;
+        color: #dbe0ff;
+        padding-left: 10px;
+        font-weight: 500;
+      }
+
+      input:focus {
+        outline: none;
+        border: none;
+      }
+
+      input::placeholder {
+        font-size: 14px;
+        font-weight: 500;
+        color: #b7bbcf;
+      }
+
+      select {
+        background-color: transparent;
+        color: #dbe0ff;
+        font-weight: 500;
+        border: none;
+      }
+
+      option {
+        font-size: 15px;
+      }
+
+      select:focus {
+        outline: none;
+      }
+
+      option {
+        padding-top: 10px;
+        background-color: #171b2b;
+      }
+    }
+  }
+
+  .payment {
+    margin-left: 15px;
+    select {
+      background-color: #171b2b;
+      border: 2px solid #282d46;
+      border-radius: 7px;
+      height: 35px;
+      color: #b7bbcf;
+      font-weight: 600;
+      padding: 0 5px;
+    }
+
+    option {
+      font-size: 15px;
+    }
+
+    select:focus {
+      outline: none;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    flex-direction: column;
+    .changeAction {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      width: 90%;
+      flex-direction: column;
+      align-items: center;
+
+      button {
+        border-radius: 10px;
+        width: 50%;
+        height: 40px;
+        font-size: 12px;
+      }
+    }
+
+    .changeToken {
+      width: 90%;
+      margin-left: 0;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .token {
+        width: 100%;
+        margin-bottom: 10px;
+        height: 45px;
+        font-size: 12px;
+        padding-left: 10px;
+      }
+
+      form {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+
+        input {
+          width: 80%;
+          height: 30px;
+          font-size: 12px;
+        }
+
+        select {
+          height: 30px;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .payment {
+      width: 90%;
+      margin-left: 0;
+      margin-top: 20px;
+
+      select {
+        width: 100%;
+        height: 45px;
+        font-size: 12px;
+      }
+    }
+  }
+}

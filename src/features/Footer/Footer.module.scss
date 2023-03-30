@@ -1,0 +1,54 @@
+.wrapper {
+  background-color: #141625;
+  height: 170px;
+  margin-top: 200px;
+  flex: 0 0 auto;
+
+  .main {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-content: center;
+    align-items: center;
+
+    .contact {
+      svg {
+        color: #e6e3e3;
+      }
+
+      a:not(:first-child) {
+        margin-left: 20px;
+      }
+    }
+
+    .logo {
+      h1 {
+        font-size: 26px;
+        color: #e6e3e3;
+        font-weight: bold;
+      }
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        color: #e6e3e3;
+      }
+
+      a:not(:first-child) {
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main {
+    margin: 0 auto;
+    width: 90%;
+  }
+}

@@ -1,0 +1,55 @@
+.header {
+  color: #dbe0ff;
+  text-align: center;
+
+  h1 {
+    font-size: 26px;
+    font-weight: bold;
+  }
+}
+
+.list {
+  margin: 45px auto;
+
+  .item {
+    margin: 0 auto;
+    margin-top: 15px;
+    cursor: pointer;
+    width: 600px;
+    padding: 1rem 1.2rem;
+    background-color: #171b2b;
+    border: 2px solid #1e233b;
+    border-radius: 5px;
+    color: #dbe0ff;
+    font-weight: 600;
+  }
+
+  .info {
+    margin: auto;
+    width: 580px;
+    padding: 1rem 0.4rem;
+    color: #dbe0ff;
+    font-weight: 500;
+    line-height: 25px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    font-size: 20px;
+  }
+
+  .list {
+    margin: 15px auto;
+    font-size: 14px;
+
+    .item {
+      width: 70%;
+    }
+
+    .info {
+      width: 70%;
+      font-size: 14px;
+    }
+  }
+}
